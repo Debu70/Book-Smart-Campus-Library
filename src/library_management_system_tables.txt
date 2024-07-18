@@ -1,0 +1,32 @@
+1.  CREATE TABLE users (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50),
+    password VARCHAR(50),
+    email VARCHAR(100),
+    contact VARCHAR(20)
+    );
+
+2.  CREATE TABLE book_details (
+    book_id VARCHAR(50) PRIMARY KEY NOT NULL,
+    book_name VARCHAR(250),
+    author VARCHAR(100),
+    quantity INT
+    );
+
+3.  CREATE TABLE student_details (
+    student_id INT PRIMARY KEY NOT NULL,
+    student_name VARCHAR(100),
+    course VARCHAR(100),
+    branch VARCHAR(100)
+    );
+
+4.  CREATE TABLE issue_book_details (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    book_id INT,
+    book_name VARCHAR(150),
+    student_id INT,
+    student_name VARCHAR(50),
+    issue_date DATE,
+    due_date DATE,
+    status VARCHAR(29)
+    );
